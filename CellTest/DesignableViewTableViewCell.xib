@@ -15,19 +15,31 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="QhK-l0-R6U" customClass="DesignableView" customModule="CellTest" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="203"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="203" id="3xI-nb-1qN"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="fwT-Wl-wQc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fwT-Wl-wQc"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="QhK-l0-R6U" firstAttribute="top" secondItem="KO3-a4-Cgs" secondAttribute="top" id="Kuy-RU-dxI"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="QhK-l0-R6U" secondAttribute="bottom" priority="500" constant="-5" id="QkZ-VL-63n"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QhK-l0-R6U" secondAttribute="bottom" id="QkZ-VL-63n"/>
+                    <constraint firstAttribute="bottom" secondItem="QhK-l0-R6U" secondAttribute="bottom" id="kHd-fr-XPh"/>
                     <constraint firstItem="QhK-l0-R6U" firstAttribute="leading" secondItem="KO3-a4-Cgs" secondAttribute="leading" id="oSS-VD-JrK"/>
                     <constraint firstAttribute="trailing" secondItem="QhK-l0-R6U" secondAttribute="trailing" id="wUd-Te-G40"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="QkZ-VL-63n"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="xibView" destination="QhK-l0-R6U" id="qGy-tg-XcF"/>

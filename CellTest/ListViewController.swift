@@ -24,7 +24,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         DELAY(2.0) {
             self.array = [
-                "ABC",
+                "1\n1\n1\n1\n1\n1\n1\n1\n1\n0\n0",
                 "DEF"
             ]
             self.tableView.reloadData()
@@ -35,7 +35,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                 "GHI",
                 "JKL",
                 "JKL",
-                "1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n",
+                "1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1",
                 "JKL",
             ]
             self.tableView.reloadData()
@@ -83,6 +83,20 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     
+    func configureCellForHeight(cell : DesignableViewTableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
+        -> CGFloat
+    {
+        cell.xibView.btn1.setTitle("Cell #" + String(indexPath.row), forState: UIControlState.Normal)
+        cell.xibView.btn2.setTitle("", forState: UIControlState.Normal)
+        
+        cell.xibView.text = array[indexPath.row] as NSString;
+        
+        cell.updateConstraintsIfNeeded()
+        cell.layoutIfNeeded()
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height;
+    }
+    
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
@@ -106,21 +120,25 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             tableView.dequeueReusableCellWithIdentifier(kCellIdentifier)
                 as? DesignableViewTableViewCell
         {
-
-            cell.xibView.btn1.setTitle("Cell #" + String(indexPath.row), forState: UIControlState.Normal)
-            cell.xibView.btn2.setTitle("", forState: UIControlState.Normal)
-
-            cell.xibView.text = array[indexPath.row] as NSString;
-
-            cell.setNeedsUpdateConstraints()
-            cell.updateConstraintsIfNeeded()
-            cell.selectionStyle = UITableViewCellSelectionStyle.None
-            
+            configureCellForHeight(cell, forRowAtIndexPath: indexPath)
             return cell
         }
         
         assert(false, "The dequeued table view cell was of an unknown type!")
         return UITableViewCell()
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        if let cell: DesignableViewTableViewCell =
+            tableView.dequeueReusableCellWithIdentifier(kCellIdentifier)
+                as? DesignableViewTableViewCell
+        {
+            return configureCellForHeight(cell, forRowAtIndexPath: indexPath) + 1
+        }
+        
+        assert(false, "The dequeued table view cell was of an unknown type!")
+        return 0;
     }
     
 }

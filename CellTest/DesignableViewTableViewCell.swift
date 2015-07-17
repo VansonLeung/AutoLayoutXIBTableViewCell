@@ -11,4 +11,13 @@ import UIKit
 @IBDesignable class DesignableViewTableViewCell: UITableViewCell
 {
     @IBOutlet weak var xibView: DesignableView!
+    
+    override func layoutSubviews() {
+        
+        super.layoutSubviews()
+        self.contentView.updateConstraintsIfNeeded();
+        self.contentView.layoutIfNeeded();
+        self.xibView.label.preferredMaxLayoutWidth = CGRectGetWidth(self.xibView.label.frame);
+        
+    }
 }
