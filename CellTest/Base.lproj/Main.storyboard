@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="cix-sQ-meJ" customClass="DesignableView" customModule="CellTest" customModuleProvider="target">
-                                <rect key="frame" x="28" y="37" width="297" height="508"/>
+                                <rect key="frame" x="28" y="37" width="541" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="297" id="B8a-Qa-VIM"/>
@@ -35,6 +35,7 @@
                         <constraints>
                             <constraint firstItem="cix-sQ-meJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="PwL-9z-zRe"/>
                             <constraint firstItem="cix-sQ-meJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="n7m-WD-q1Q"/>
+                            <constraint firstAttribute="trailing" secondItem="cix-sQ-meJ" secondAttribute="trailing" constant="31" id="szv-zz-7gs"/>
                         </constraints>
                     </view>
                     <connections>

@@ -33,6 +33,7 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtf-ic-GNB">
                             <rect key="frame" x="8" y="0.0" width="105" height="184"/>
+                            <color key="backgroundColor" red="0.97102077939999998" green="0.95394667629999996" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" priority="500" constant="168" id="joh-LX-xdP"/>
                             </constraints>

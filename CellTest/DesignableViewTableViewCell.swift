@@ -12,12 +12,20 @@ import UIKit
 {
     @IBOutlet weak var xibView: DesignableView!
     
+    override var bounds : CGRect{
+        didSet {
+            self.contentView.frame = self.bounds;
+        }
+    }
+    
     override func layoutSubviews() {
         
+        self.xibView.label.preferredMaxLayoutWidth = CGRectGetWidth(self.xibView.label.frame);
         super.layoutSubviews()
         self.contentView.updateConstraintsIfNeeded();
         self.contentView.layoutIfNeeded();
-        self.xibView.label.preferredMaxLayoutWidth = CGRectGetWidth(self.xibView.label.frame);
+        
+        NSLog("%@", NSStringFromCGRect(self.contentView.frame))
         
     }
 }

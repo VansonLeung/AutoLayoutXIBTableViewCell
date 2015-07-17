@@ -34,7 +34,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.array = [
                 "GHI",
                 "JKL",
-                "JKL",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 "1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1 \n1",
                 "JKL",
             ]
@@ -52,6 +52,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.array = [
                 "PQR",
                 "ABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \n",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             ]
             self.tableView.reloadData()
         }
@@ -86,11 +88,13 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func configureCellForHeight(cell : DesignableViewTableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
         -> CGFloat
     {
+        cell.bounds = CGRectMake(0, 0, CGRectGetWidth(self.tableView.bounds), CGRectGetHeight(cell.bounds));
         cell.xibView.btn1.setTitle("Cell #" + String(indexPath.row), forState: UIControlState.Normal)
         cell.xibView.btn2.setTitle("", forState: UIControlState.Normal)
         
         cell.xibView.text = array[indexPath.row] as NSString;
         
+        cell.sizeToFit()
         cell.updateConstraintsIfNeeded()
         cell.layoutIfNeeded()
         cell.selectionStyle = UITableViewCellSelectionStyle.None
@@ -106,6 +110,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         NSLog("SELECTED");
+        tableView.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
