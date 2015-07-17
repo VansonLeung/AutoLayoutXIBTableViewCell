@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CellTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="cix-sQ-meJ" customClass="DesignableView" customModule="CellTest" customModuleProvider="target">
+                                <rect key="frame" x="28" y="37" width="297" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="B8a-Qa-VIM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text">
+                                        <string key="value">s asdfasdfdsa sa sa sa as sa sa sa s asdfasdfdsa sa sa sa as sa sa sa s asdfasdfdsa sa sa sa as sa sa sa s asdfasdfdsa sa sa sa as sa sa sa s asdfasdfdsa sa sa sa as sa sa sa s asdfasdfdsa sa sa sa as sa sa sa </string>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cix-sQ-meJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="PwL-9z-zRe"/>
+                            <constraint firstItem="cix-sQ-meJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="n7m-WD-q1Q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dview" destination="cix-sQ-meJ" id="w5u-nu-PK9"/>
+                        <segue destination="1eD-ta-DbI" kind="show" identifier="" id="UMw-tp-bh5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="a1a-gk-ESd">
+            <objects>
+                <viewController storyboardIdentifier="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1eD-ta-DbI" customClass="ListViewController" customModule="CellTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HaZ-H9-qEc"/>
+                        <viewControllerLayoutGuide type="bottom" id="hFg-1F-sSp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d21-MO-p6W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-aF-QSh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1eD-ta-DbI" id="utC-lf-ccz"/>
+                                    <outlet property="delegate" destination="1eD-ta-DbI" id="ECQ-YA-gqH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pWs-aF-QSh" firstAttribute="top" secondItem="d21-MO-p6W" secondAttribute="top" id="9CI-qi-tcb"/>
+                            <constraint firstItem="pWs-aF-QSh" firstAttribute="leading" secondItem="d21-MO-p6W" secondAttribute="leading" id="Qod-mv-w2t"/>
+                            <constraint firstItem="hFg-1F-sSp" firstAttribute="top" secondItem="pWs-aF-QSh" secondAttribute="bottom" id="YOo-oj-CRb"/>
+                            <constraint firstAttribute="trailing" secondItem="pWs-aF-QSh" secondAttribute="trailing" id="ZSt-ys-EhF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="pWs-aF-QSh" id="zkf-qm-eak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aag-Om-s8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="1015"/>
         </scene>
     </scenes>
 </document>

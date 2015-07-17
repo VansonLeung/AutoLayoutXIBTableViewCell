@@ -13,6 +13,15 @@
 		2177E5261B583F67001D93F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2177E5251B583F67001D93F1 /* Images.xcassets */; };
 		2177E5291B583F67001D93F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2177E5271B583F67001D93F1 /* LaunchScreen.xib */; };
 		2177E5351B583F68001D93F1 /* CellTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5341B583F68001D93F1 /* CellTestTests.swift */; };
+		2177E53F1B58A86E001D93F1 /* DesignableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2177E53E1B58A86E001D93F1 /* DesignableViewTableViewCell.xib */; };
+		2177E5451B58AC6F001D93F1 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5441B58AC6F001D93F1 /* DesignableView.swift */; };
+		2177E5471B58AC7D001D93F1 /* DesignableXIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5461B58AC7D001D93F1 /* DesignableXIBView.swift */; };
+		2177E54B1B58AD7C001D93F1 /* DesignableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2177E54A1B58AD7C001D93F1 /* DesignableView.xib */; };
+		2177E54D1B58B227001D93F1 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E54C1B58B227001D93F1 /* CalculatorView.swift */; };
+		2177E54F1B58B3B9001D93F1 /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E54E1B58B3B9001D93F1 /* Rainbow.swift */; };
+		2177E5511B58D177001D93F1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5501B58D177001D93F1 /* ListViewController.swift */; };
+		2177E5531B58D4F2001D93F1 /* DesignableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5521B58D4F2001D93F1 /* DesignableViewTableViewCell.swift */; };
+		2177E5551B58DCBE001D93F1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5541B58DCBE001D93F1 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		2177E52E1B583F68001D93F1 /* CellTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2177E5331B583F68001D93F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2177E5341B583F68001D93F1 /* CellTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTestTests.swift; sourceTree = "<group>"; };
+		2177E53E1B58A86E001D93F1 /* DesignableViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignableViewTableViewCell.xib; sourceTree = "<group>"; };
+		2177E5441B58AC6F001D93F1 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		2177E5461B58AC7D001D93F1 /* DesignableXIBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableXIBView.swift; sourceTree = "<group>"; };
+		2177E54A1B58AD7C001D93F1 /* DesignableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignableView.xib; sourceTree = "<group>"; };
+		2177E54C1B58B227001D93F1 /* CalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		2177E54E1B58B3B9001D93F1 /* Rainbow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rainbow.swift; sourceTree = "<group>"; };
+		2177E5501B58D177001D93F1 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		2177E5521B58D4F2001D93F1 /* DesignableViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableViewTableViewCell.swift; sourceTree = "<group>"; };
+		2177E5541B58DCBE001D93F1 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +97,19 @@
 			children = (
 				2177E51E1B583F67001D93F1 /* AppDelegate.swift */,
 				2177E5201B583F67001D93F1 /* ViewController.swift */,
+				2177E5501B58D177001D93F1 /* ListViewController.swift */,
 				2177E5221B583F67001D93F1 /* Main.storyboard */,
 				2177E5251B583F67001D93F1 /* Images.xcassets */,
 				2177E5271B583F67001D93F1 /* LaunchScreen.xib */,
 				2177E51C1B583F67001D93F1 /* Supporting Files */,
+				2177E5521B58D4F2001D93F1 /* DesignableViewTableViewCell.swift */,
+				2177E53E1B58A86E001D93F1 /* DesignableViewTableViewCell.xib */,
+				2177E5441B58AC6F001D93F1 /* DesignableView.swift */,
+				2177E54A1B58AD7C001D93F1 /* DesignableView.xib */,
+				2177E5461B58AC7D001D93F1 /* DesignableXIBView.swift */,
+				2177E54C1B58B227001D93F1 /* CalculatorView.swift */,
+				2177E54E1B58B3B9001D93F1 /* Rainbow.swift */,
+				2177E5541B58DCBE001D93F1 /* Helpers.swift */,
 			);
 			path = CellTest;
 			sourceTree = "<group>";
@@ -193,8 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2177E5241B583F67001D93F1 /* Main.storyboard in Resources */,
+				2177E53F1B58A86E001D93F1 /* DesignableViewTableViewCell.xib in Resources */,
 				2177E5291B583F67001D93F1 /* LaunchScreen.xib in Resources */,
 				2177E5261B583F67001D93F1 /* Images.xcassets in Resources */,
+				2177E54B1B58AD7C001D93F1 /* DesignableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2177E5531B58D4F2001D93F1 /* DesignableViewTableViewCell.swift in Sources */,
+				2177E54F1B58B3B9001D93F1 /* Rainbow.swift in Sources */,
 				2177E5211B583F67001D93F1 /* ViewController.swift in Sources */,
+				2177E54D1B58B227001D93F1 /* CalculatorView.swift in Sources */,
+				2177E5551B58DCBE001D93F1 /* Helpers.swift in Sources */,
 				2177E51F1B583F67001D93F1 /* AppDelegate.swift in Sources */,
+				2177E5471B58AC7D001D93F1 /* DesignableXIBView.swift in Sources */,
+				2177E5451B58AC6F001D93F1 /* DesignableView.swift in Sources */,
+				2177E5511B58D177001D93F1 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CellTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CellTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
