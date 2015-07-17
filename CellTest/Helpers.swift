@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 func DELAY(seconds:Double, closure:()->()) {
     dispatch_after(

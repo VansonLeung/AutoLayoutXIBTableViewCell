@@ -22,6 +22,7 @@
 		2177E5511B58D177001D93F1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5501B58D177001D93F1 /* ListViewController.swift */; };
 		2177E5531B58D4F2001D93F1 /* DesignableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5521B58D4F2001D93F1 /* DesignableViewTableViewCell.swift */; };
 		2177E5551B58DCBE001D93F1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2177E5541B58DCBE001D93F1 /* Helpers.swift */; };
+		21A0BD3D1B58E87A00EC5909 /* ETRightViewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0BD3C1B58E87A00EC5909 /* ETRightViewTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2177E5501B58D177001D93F1 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		2177E5521B58D4F2001D93F1 /* DesignableViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableViewTableViewCell.swift; sourceTree = "<group>"; };
 		2177E5541B58DCBE001D93F1 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		21A0BD3C1B58E87A00EC5909 /* ETRightViewTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETRightViewTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				2177E54C1B58B227001D93F1 /* CalculatorView.swift */,
 				2177E54E1B58B3B9001D93F1 /* Rainbow.swift */,
 				2177E5541B58DCBE001D93F1 /* Helpers.swift */,
+				21A0BD3C1B58E87A00EC5909 /* ETRightViewTextField.swift */,
 			);
 			path = CellTest;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				2177E51F1B583F67001D93F1 /* AppDelegate.swift in Sources */,
 				2177E5471B58AC7D001D93F1 /* DesignableXIBView.swift in Sources */,
 				2177E5451B58AC6F001D93F1 /* DesignableView.swift in Sources */,
+				21A0BD3D1B58E87A00EC5909 /* ETRightViewTextField.swift in Sources */,
 				2177E5511B58D177001D93F1 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +449,7 @@
 				2177E53A1B583F68001D93F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2177E53B1B583F68001D93F1 /* Build configuration list for PBXNativeTarget "CellTestTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +458,7 @@
 				2177E53D1B583F68001D93F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

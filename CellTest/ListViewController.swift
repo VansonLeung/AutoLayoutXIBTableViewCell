@@ -21,7 +21,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.registerNib(UINib(nibName: "DesignableViewTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: kCellIdentifier)
         tableView.rowHeight = UITableViewAutomaticDimension
-        
+
         DELAY(2.0) {
             self.array = [
                 "ABC",
@@ -56,7 +56,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.tableView.reloadData()
         }
     }
-
     
     
     
@@ -92,7 +91,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        
+        NSLog("SELECTED");
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -115,7 +114,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
             cell.setNeedsUpdateConstraints()
             cell.updateConstraintsIfNeeded()
-            
+            cell.selectionStyle = UITableViewCellSelectionStyle.None
             
             return cell
         }

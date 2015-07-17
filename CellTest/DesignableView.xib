@@ -60,15 +60,33 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fL-nG-V3N" customClass="ETRightViewTextField" customModule="CellTest" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="92" width="141" height="92"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="141" id="Xk9-zi-m6d"/>
+                        <constraint firstAttribute="height" constant="92" id="tdk-7g-Po9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="rightViewText" value="asdf12ew"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="rightViewTextColor">
+                            <color key="value" red="0.0" green="0.61489455240000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="pickerData" value="sdfasdas"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isPickerInput" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="0.93567282770000004" blue="0.6619507348" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="rgD-Et-qsC" firstAttribute="leading" secondItem="xcd-TA-Ysd" secondAttribute="trailing" constant="8" id="4nM-Od-Gwq"/>
                 <constraint firstAttribute="trailing" secondItem="rgD-Et-qsC" secondAttribute="trailing" id="DuH-DC-LOS"/>
                 <constraint firstItem="r4s-eU-I4X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O4v-lY-DNT"/>
+                <constraint firstItem="8fL-nG-V3N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ow0-QP-pdv"/>
                 <constraint firstItem="rgD-Et-qsC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="STk-wc-zLh"/>
                 <constraint firstItem="xcd-TA-Ysd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VwS-4B-Wak"/>
                 <constraint firstAttribute="bottom" secondItem="rgD-Et-qsC" secondAttribute="bottom" id="XKf-tH-sqy"/>
+                <constraint firstItem="8fL-nG-V3N" firstAttribute="top" secondItem="xcd-TA-Ysd" secondAttribute="bottom" constant="1" id="fOJ-Nw-5gR"/>
                 <constraint firstAttribute="bottom" secondItem="r4s-eU-I4X" secondAttribute="bottom" priority="500" id="kV0-TO-yFk"/>
                 <constraint firstItem="xcd-TA-Ysd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="m8C-x8-SjR"/>
                 <constraint firstItem="r4s-eU-I4X" firstAttribute="top" secondItem="xcd-TA-Ysd" secondAttribute="bottom" constant="2" id="sa1-XA-oYd"/>

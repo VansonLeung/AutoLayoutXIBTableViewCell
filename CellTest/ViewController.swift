@@ -21,8 +21,10 @@ class ViewController: UIViewController {
         DELAY(4.0) { self.dview.text = "ABC ABC \nABC ABC " }
         DELAY(6.0) { self.dview.text = "ABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \nABC ABC \n" }
         DELAY(8.0) { self.showDetails() }
+        
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
